@@ -6,5 +6,9 @@ class Application
 {
     public:
     void Run();
+
+    private:
+    void showError();
+
 };
 #endif
