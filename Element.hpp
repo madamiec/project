@@ -5,12 +5,13 @@ using namespace std;
 class Element
 {
     private:
-    string Type; // LED, compact, traditional, halogen
+    string Type; // LED, tradycyjna, swietlikowka, halogen
     int Lumens; // w lumenach
-    int Watts;  // wyswietla informacje o mocy
-    int Colour; // w Kelwinach (K)
+    int Watts;  // moc w watach
+    int Colour; // barwa w Kelwinach (K)
 
     public:
-    Element(string type, int lumens, int watts, int colour); 
+    // friend ostream& operator<< (ostream&, Element const&);
+    Element( string type, int lumens, int watts, int colour); 
     void Show();
 };

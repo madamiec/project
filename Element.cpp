@@ -16,3 +16,9 @@ void Element::Show()
 {
     cout<<Type<<"  "<<Lumens<<"  "<<Watts<<"  "<<Colour<<endl;
 }
+
+// ostream& operator<< (ostream &wyjscie, Element const& ex)
+// {
+//    wyjscie << "" << ex << endl;
+//    return wyjscie;
+// }
